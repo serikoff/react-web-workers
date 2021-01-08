@@ -1,7 +1,5 @@
 function getNthFobonacciNumber(n) {
-  return n <= 1
-    ? n
-    : getNthFobonacciNumber(n - 1) + getNthFobonacciNumber(n - 2)
+	return n <= 1 ? n : getNthFobonacciNumber(n - 1) + getNthFobonacciNumber(n - 2);
 }
 
-export { getNthFobonacciNumber }
+export { getNthFobonacciNumber };

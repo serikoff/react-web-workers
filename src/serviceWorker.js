@@ -48,6 +48,8 @@ export function register(config) {
             'This web app is being served cache-first by a service ' +
               'worker. To learn more, visit https://bit.ly/CRA-PWA'
           )
+        }).catch(() => {
+          alert("Failed to register / update ServiceWorker for scope. Storage access in this context is restricted due to user privacy settings or private browsing mode.")
         })
       } else {
         // Is not localhost. Just register service worker
